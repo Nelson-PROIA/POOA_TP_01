@@ -1,13 +1,31 @@
 package com.dauphine_psl.tp_00;
 
+/**
+ * 
+ * Classe TestPoint, permet de tester la classe Point.
+ * 
+ * @see Point
+ * 
+ * @author Nelson PROIA (nelson.proia@dauphine.eu)
+ *
+ */
 public class TestPoint {
 
+	/**
+	 * Fonction principale (run).
+	 * 
+	 * @param args les arguments du programme.
+	 * 
+	 * @see String
+	 */
 	public static void main(String[] args) {
-		// (5) Erreur à la compilation, lors de la déclaration de n'importe quel constructeur (autre que le constructeur par défaut) dans la classe, le constructeur par défaut n'est plus utilisable/accessible.
+		// (2) Erreur à la compilation, on essaye d'accéder à des attributs privés hors
+		// de la classe de déclaration (visibilité de private pour des attributs limitée
+		// à la classe de déclaration). On pourrait utiliser des accesseurs/getters ou
+		// utiliser le modifier `public` pour les attributs.
+
 		// Point p = new Point();
-		
-		// (2) Erreur à la compilation, accès d'attributs privés depuis une autre classe. Utiliser des getters ou déclarer les attributs public.
 		// System.out.println(p.x + " " + p.y);
 	}
-	
+
 }
